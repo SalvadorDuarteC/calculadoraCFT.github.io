@@ -1,0 +1,403 @@
+
+/*header*/
+
+header {
+    position: absolute;
+    width: 412px;
+    height: 84px;
+
+    background: #025273;
+}
+
+header h1 { 
+    position: absolute;
+    width: 268;
+    height: 13px;
+    left: calc(50% - 268px/2);
+    top: 1px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+
+    color: #FFFFFF;
+}
+
+/*main*/
+
+.nombrePieza {
+    position: absolute;
+    width: 198px;
+    height: 29px;
+    display: flex;
+    flex: none;
+    top: 80px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #025273;
+}
+
+.precioFt3 {
+    position: absolute;
+    width: 114px;
+    height: 29px;
+    left: 288px;
+    top: 79px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    inline-size: auto;
+
+    color: #025273;
+}
+
+.inputNombre {
+    position: absolute;
+    width: 241px;
+    height: 60px;
+    left: 8px;
+    top: 140px;
+
+    background: #F29545;
+    border-radius: 7PX;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #025273;
+}
+
+.inputPrecio {
+    position: absolute;
+    width: 124px;
+    height: 60px;
+    left: 290px;
+    top: 140px;
+
+    background: #F29545;
+    border-radius: 7PX;
+    border: none;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #025273;
+    
+}
+/* input de dimensiones*/
+.tabla {
+    position: absolute;
+    top: 230px;
+    
+}
+
+/* input de altura */
+.textAltura {
+    position: absolute;
+    top: -15px;
+    left: 0px;
+    background-color: #ffffff;
+    height: 29px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: -8px;
+
+    color: #025273;
+}
+
+#longitudAlto {
+    position: absolute;
+    width: 300px;
+    height: 60px;
+    top: -5px;
+    left: 0px;
+
+    background: F0F0F0;
+    border: 1.5px solid #025273;
+    border-radius: 7px 0px 0px 7px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #025273;
+}
+
+#unidadAlto {
+    position: absolute;
+    width: 89px;
+    height: 65px;
+    top: -5px;
+    left: 306px;
+
+    background: F0F0F0;
+    border: 1.5px solid #025273;
+    border-radius: 0px 7px 7px 0px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #025273;
+}
+
+/* input ancho */
+.textAncho {
+    position: absolute;
+    top: 67px;
+    left: 0px;
+    background-color: #ffffff;
+    height: 29px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: -8px;
+
+    color: #025273;
+}
+
+#longitudAncho {
+    position: absolute;
+    width: 300px;
+    height: 60px;
+    top: 80px;
+    left: 0px;
+
+    background: F0F0F0;
+    border: 1.5px solid #025273;
+    border-radius: 7px 0px 0px 7px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #025273;
+}
+
+#unidadAncho {
+    position: absolute;
+    width: 89px;
+    height: 65px;
+    top: 80px;
+    left: 306px;
+
+    background: F0F0F0;
+    border: 1.5px solid #025273;
+    border-radius: 0px 7px 7px 0px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #025273;
+}
+
+/* input de largo */
+.textLargo {
+    position: absolute;
+    top: 150px;
+    left: 0px;
+    background-color: #ffffff;
+    height: 29px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: -0px;
+
+    color: #025273;
+
+}
+
+#longitudLargo {
+    position: absolute;
+    width: 300px;
+    height: 60px;
+    top: 165px;
+    left: 0px;
+
+    background: F0F0F0;
+    border: 1.5px solid #025273;
+    border-radius: 7px 0px 0px 7px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #025273;
+}
+
+#unidadLargo {
+    position: absolute;
+    width: 89px;
+    height: 65px;
+    top: 165px;
+    left: 306px;
+
+    background: F0F0F0;
+    border: 1.5px solid #025273;
+    border-radius: 0px 7px 7px 0px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #025273;
+}
+
+/* cantidad de piezas iguales */
+#cantidad {
+    position: absolute;
+    top: 190px;
+}
+
+.textCantidad {
+    position: absolute;
+    top: 45px;
+    background-color: #FFFFFF;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 29px;
+
+    color: #025273;
+
+}
+
+#cantidadPzs {
+    position: absolute;
+    width: 385px;
+    height: 60px;
+    top: 60px;
+    left: 0px;
+
+    background: F0F0F0;
+    border: 1.5px solid #025273;
+    border-radius: 7px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #025273;
+}
+
+.cantidadP {
+    position: absolute;
+    top: 76px;
+    left: 340px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #025273;
+
+}
+
+/* boton para ejecutar el calculo */
+.btnCalculo {
+    position: absolute;
+    width: 173px;
+    height: 50px;
+    left: 130px;
+    top: 560px;
+
+    background: #F29545;
+    border-radius: 7px;
+    border: none;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #025273;
+    
+}
+
+/* lista de resultados */
+
+
+.resultados {
+    position: absolute;
+    top: 630px;
+    background: #025273;
+    width: 412px;
+    border-radius: 8px 8px 0 0;
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+
+}
+
+.hr {
+    position: absolute;
+    height: .5px;
+    width: 380px;
+    top: 65px;
+    left: 15px;
+        
+    background-color: lightgray;
+    
+}
+
+/* pie de pagina*/
+footer {
+    position: absolute;
+    top: 755px;
+    background: #025273;
+    width: 412px;
+    border-radius: 0px 0px 7px 7px;
+    text-align: center;
+    color: #FFFFFF;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    
+
+}

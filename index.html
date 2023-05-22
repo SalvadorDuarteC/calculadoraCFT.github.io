@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js"></script>
+    <title>CFT Calculadora</title>
+</head>
+<header>
+    <h1>CFT Calculadora</h1>
+</header>
+<body>
+    <main>
+        <div>
+            <h2 class="nombrePieza">Nombre de Pieza</h2>
+            <input type="text" class="inputNombre">
+        </div>
+        <div>
+            <h2 class="precioFt3">Precio Ft3</h2>
+            <input type="number" class="inputPrecio">
+        </div>
+        <article>
+            <table class="tabla">
+                <tr>
+                    <td><input id="longitudAlto" type="number"></td>
+                    <td class="textAltura">Altura</td>
+                    <td>
+                        <select name="unidades" id="unidadAlto">
+                            <option value="mm">mm</option>
+                            <option value="in">in</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input id="longitudAncho" type="number"></td>
+                    <td class="textAncho">Ancho</td>
+                    <td>
+                        <select name="unidades" id="unidadAncho">
+                            <option value="cm">cm</option>
+                            <option value="in">in</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input id="longitudLargo" type="number"></td>
+                    <td class="textLargo"><p>Largo</p></td>
+                    <td>
+                        <select name="unidades" id="unidadLargo">
+                            <option value="cm">cm</option>
+                            <option value="in">in</option>
+                            <option value="ft">ft</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr id="cantidad">
+                    <td><input id="cantidadPzs" type="number"></td>
+                    <td class="textCantidad">Cantidad</td>
+                    <td class="cantidadP">Pzs</td>
+                </tr>
+            </table>
+                <div>
+                    <button class="btnCalculo" onclick="calcular()">Agregar</button>
+                </div>
+            <table class="resultados">
+                <tr>
+                    <td>Total CFT</td>
+                    <td>Costo Total</td>
+                </tr>
+                
+                <tr>
+                    <td><span id="reParcialFt">49</span></td>
+                    <td><p id="reParcialCos">$165</p></td>
+                </tr>
+                <tr>
+                    <td  class="hr"></td>
+                </tr>
+                <div>
+                    <tr class="nombresResultados">
+                        <td>Nombre</td>
+                        <td>CFT</td>
+                        <td>Costo</td>
+                    </tr>
+                    <tr>
+                        <td id="nombrePieza1">Lateral Isquierdo</td>
+                        <td id="piesPieza1">48</td>
+                        <td id="costoPieza1">$165</td>
+                    </tr>
+                </div>
+            </table>
+        </article>
+    </main>
+    <footer>
+        <p>©Copyright Salvador Duarte</p>
+    </footer>
+</body>
+</html>
