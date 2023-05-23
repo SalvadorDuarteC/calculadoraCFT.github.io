@@ -15,11 +15,11 @@
     <main>
         <div>
             <h2 class="nombrePieza">Nombre de Pieza</h2>
-            <input type="text" class="inputNombre">
+            <input type="text" class="inputNombre" id="inputNombre">
         </div>
         <div>
             <h2 class="precioFt3">Precio Ft3</h2>
-            <input type="number" class="inputPrecio">
+            <input type="number" class="inputPrecio" id="precioMaterial">
         </div>
         <article>
             <table class="tabla">
@@ -61,7 +61,7 @@
                 </tr>
             </table>
                 <div>
-                    <button class="btnCalculo" onclick="calcular()">Agregar</button>
+                    <button class="btnCalculo" onclick="calculoYcosto()">Agregar</button>
                 </div>
             <table class="resultados">
                 <tr>
@@ -70,8 +70,8 @@
                 </tr>
                 
                 <tr>
-                    <td><span id="reParcialFt">49</span></td>
-                    <td><p id="reParcialCos">$165</p></td>
+                    <td><span id="reParcialFt"></span></td>
+                    <td><p id="reParcialCos"></p></td>
                 </tr>
                 <tr>
                     <td  class="hr"></td>
@@ -83,9 +83,9 @@
                         <td>Costo</td>
                     </tr>
                     <tr>
-                        <td id="nombrePieza1">Lateral Isquierdo</td>
-                        <td id="piesPieza1">48</td>
-                        <td id="costoPieza1">$165</td>
+                        <td id="nombrePieza1"></td>
+                        <td id="piesPieza1"></td>
+                        <td id="costoPieza1"></td>
                     </tr>
                 </div>
             </table>
