@@ -1,9 +1,14 @@
-
-
-
-
+//variabld de costo de ft3
+let precio;
+let inputNombre;
 //definicion de funcion de calculo
 function calcular() {
+    //declaracion de variable vacia
+    let rpariclaft;
+
+    //variable resultado de calculo
+    rpariclaft = document.getElementById("piesPieza1");
+
     //variables de unidad de medida
     let ualto = document.getElementById("unidadAlto").value;
     let uancho = document.getElementById("unidadAncho").value;
@@ -14,13 +19,12 @@ function calcular() {
     let ancho = document.getElementById("longitudAncho").value;
     let largo = document.getElementById("longitudLargo").value;
 
-    //variable resultado de calculo
-    let rpariclaft = document.getElementById("reParcialFt");
+    
   
     //1ra condicional de formulas
     if (ualto === "in" && uancho === "in" && ulargo === "in") {
         rpariclaft.textContent = ((alto * ancho / largo) * 100).toFixed(2);
-        console.log(rpariclaft.textContent.toFixed(2));
+        
     } 
 
     //2da condicional de formulas
@@ -58,12 +62,28 @@ function calcular() {
         rpariclaft.textContent = ((((alto / 25.4) * ancho) * (largo / 12)) / 12).toFixed(2);
     }  
 
+    //se retorna el valor en numero para poder utilizarlo fuera
+    return parseFloat(rpariclaft.textContent);
+}
+
+//definicion de funcion de costo
+function costo() {
+    let rpariclaft = calcular();
+    let precioUnidad = rpariclaft * precio;
+    precioUnidad = document.getElementById("costoPieza1").textContent = "$" + precioUnidad;
+}
+
+//funcion para leer el inputNombre y asignarlo a la lista
+function nombrePieza(){
+    let nombreMostrar = document.getElementById("inputNombre").value;
+    document.getElementById("nombrePieza1").textContent = nombreMostrar;
 }
 
 
+//funcion llamada con el boton
+function calculoYcosto() {
+    precio = document.getElementById("precioMaterial").value;
+    costo();
+    nombrePieza();
+}
 
-  /*
-  H Altura
-  J ancho
-  L largo
-  */
